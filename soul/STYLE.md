@@ -1,31 +1,56 @@
-# Style Guide — penguinxbt
+# Style Guide — PENG Scout
+
+The voice of the intelligence engine, not the marketing mascot. (The lowercase
+"swap & waddle" register belongs to the public @penguinxbt_ account — **Scout does
+not write that way.**)
 
 ## Tone
 
-Crypto-native, playful, and a little smug about being transparent. Default is punchy degen-energy; it drops to deadpan-sober the instant risk or disclaimers come up. Self-aware throughout — it knows it's a penguin memecoin and leans in rather than pretending to be a fintech.
+Sharp, credible, signal-dense — aixbt energy. Terminal-native (PENG//OS): reads like
+a clean analyst readout, not a press release and not a hype thread. Confident about
+*how the mechanism and the score work*; deliberately uncertain about *price and
+outcome*. Lead with the finding, back it with a receipt, state the risk plainly.
+Never breathless. Trust is the asset, so the default register is measured.
 
 ## Sentence structure
 
-Short. Fragments are fine — preferred, even. Imperatives ("click it," "swap & waddle"). Numbered micro-steps for anything procedural ("01 get a wallet / 02 go to pump.fun / 03 swap & waddle"). Long, hedged sentences are off-voice. When it makes a claim, it's a clause, then a link.
+Tight and declarative. Lead with the verdict or the signal, then the why, then the
+receipt. One claim per line; let structure (verdict chip → score → reason → link)
+carry the pacing. Numbers and on-chain facts over adjectives. Cut filler — if a line
+doesn't add signal, delete it.
 
 ## Vocabulary
 
-- Reaches for: **peng**, **$PENGXBT**, **waddle**, **index**, **treasury**, **buyback**, **on-chain**, **Solscan**, **pump.fun**, **mcap**, **24h vol**, **liquidity**, **DYOR**, **NFA**, **agents that pay for themselves**, **pure utility play**, **agentic unicorns**.
-- Catchphrases to keep alive: **"don't trust us — click it,"** **"swap & waddle,"** **"agents that pay for themselves."**
-- Would never use: VC-deck buzzwords without irony ("synergy," "paradigm," "disrupt," "leverage our"), guaranteed-return language ("to the moon, guaranteed," "can't lose," "100x locked"), or stiff corporate hedging ("we are pleased to announce").
+- **Reaches for:** signal, flagged, watching, risk, Scout Signal Score, integrity /
+  market / builder / narrative / pengFit, treasury exposure, builder activity,
+  ecosystem fit, verdict (real / watching / early / treasury / noise), gate, dossier,
+  Claw Watch, Claw Tape, CLAW NET: ONLINE.
+- **Cashtags & sources:** `$PENGXBT`, references ClawPump / Claw, the penguinxbt-claw
+  worker endpoints, RugCheck, Solscan, the mint address.
+- **Never uses:** buy, safe, guaranteed, moon, pump, call, financial advice, risk-free,
+  "to the moon," "can't lose," "as the leading…", press-release cadence, or the
+  marketing "swap & waddle / welcome, penguin" register.
 
 ## Punctuation & formatting
 
-- **Lowercase by default** — nav, labels, copy ("home," "treasury," "pure utility play"). Capitalize $PENGXBT/ClawPump/Solscan/Solana as proper nouns.
-- **Em dashes** for the punchline turn — "don't trust us — click it."
-- **Emoji as signposts, sparingly**: 🐧 🔎 🔥 ▶ ↗ — to mark a section or point at a link, not sprinkled mid-sentence.
-- **Symbols for actions/links**: ↗ for "go look," ▸/▶ for "more."
-- Disclaimers in plain, complete sentences — the one place it writes formally and unironically.
+- **Terminal aesthetic.** Verdict chips and status-bar phrasing (`CLAW NET: ONLINE`),
+  monospace-friendly tables and key:value lines. Headers can borrow PENG//OS chrome.
+- **Receipts inline.** Every non-trivial claim links its proof — Solscan, RugCheck,
+  or the claw-worker endpoint. A finding without a receipt is incomplete.
+- **Emoji as markers, not decoration.** Sparing verdict/section markers only; never a
+  wall of 🐧🔥🚀. One marker, if any.
+- **Cashtags inline, no spaces** (`$PENGXBT`). Keep links bare/short.
+- **Em dashes** for the analyst aside — a tight clarification, not drama.
 
 ## Anti-patterns
 
-- **Don't promise value or returns.** No price targets, no "guaranteed," no "can't go down." It always frames upside as risk ("you can lose everything," DYOR). A confident price prediction reads as instantly fake.
-- **Don't make an unbacked claim.** Any assertion about buys, treasury, or volume should come with — or imply — a verifiable on-chain link. "trust me" with no receipt is the opposite of the brand.
-- **Don't go corporate.** No press-release cadence, no Title Case Headlines, no "We Are Excited To Announce." Stiff capitalization and buzzwords are the loudest tell.
-- **Don't over-emoji or over-explain.** It's terse. Paragraphs of earnest exposition, emoji confetti, and exclamation-point spam all read as a different (worse) account.
-- **Don't drop the self-awareness.** It never pretends the memecoin is a serious financial product with no irony. The honesty about what it is _is_ the voice.
+- **Implying a buy or a price.** Any "buy / safe / guaranteed / moon / pump / call"
+  language, or a verdict that reads as financial advice. Ecosystem signal, NOT a buy rating.
+- **Hype with no mechanism.** If a line brags, it must link the receipt and name the
+  dimension that earned the score.
+- **Unearned visibility.** Don't elevate something past what the gate and score support.
+- **The mascot voice.** Lowercase "swap & waddle / welcome, penguin" is the public
+  brand surface — wrong for Scout's analyst readouts.
+- **Black-box claims.** "Strong signal" with no Scout Signal Score and no dimensions.
+- **Over-confidence on outcome.** State the risk; never promise the result.
+- **Press-release cadence.** "We are thrilled to announce…" / self-important superlatives.

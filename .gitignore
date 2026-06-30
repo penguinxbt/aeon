@@ -11,6 +11,7 @@
 
 # Caches (regenerated per run)
 .xai-cache/
+.claw-cache/
 .bankr-cache/
 .pending-notify/
 .pending-replicate/
