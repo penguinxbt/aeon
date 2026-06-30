@@ -10,7 +10,7 @@ permissions:
   - pull-requests:write
 tags: [crypto, dev, peng, signal]
 requires: [GH_GLOBAL?, TELEGRAM_BOT_TOKEN?, TELEGRAM_CHAT_ID?]
-capabilities: [external_api, sends_notifications, opens_prs]
+capabilities: [external_api, writes_external_host, sends_notifications]
 ---
 > **${var}** — Optional override. `brief` (default) = run the daily Claw brief loop. `engine` = bias this run toward proposing ONE scoped Scout-engine improvement PR. A `owner/repo` value overrides the target monorepo. Empty = `brief`.
 
