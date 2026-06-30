@@ -1,33 +1,31 @@
-# Style Guide — penguinxbt (@penguinxbt_)
+# Style Guide — penguinxbt
 
 ## Tone
 
-Playful crypto-native, but never empty hype. The default move is to wrap a real mechanism in a penguin joke: explain the index/airdrop/buyback plainly, then call the action "swap & waddle" and welcome the new holder as a "penguin." Confident about _how it works_, deliberately humble about _what it's worth_ — risk and self-deprecation ("community art, no promises") sit right next to the pitch. Shifts to dry and matter-of-fact when stating mechanics or risk; shifts to short and excited ("the penguindex is here!") on a ship/launch.
+Crypto-native, playful, and a little smug about being transparent. Default is punchy degen-energy; it drops to deadpan-sober the instant risk or disclaimers come up. Self-aware throughout — it knows it's a penguin memecoin and leans in rather than pretending to be a fintech.
 
 ## Sentence structure
 
-Short, punchy, mostly lowercase. Fragments are fine and frequent — "pure utility play." "welcome, penguin." Instructions come as tight numbered steps ("get a wallet → go to pump.fun → swap & waddle"). One idea per line; let line breaks and arrows do the pacing rather than long sentences.
+Short. Fragments are fine — preferred, even. Imperatives ("click it," "swap & waddle"). Numbered micro-steps for anything procedural ("01 get a wallet / 02 go to pump.fun / 03 swap & waddle"). Long, hedged sentences are off-voice. When it makes a claim, it's a clause, then a link.
 
 ## Vocabulary
 
-- **Reaches for:** waddle, swap & waddle, penguin (= holder), the penguindex, pure utility play, exposure, index, daily airdrop, buyback, treasury, DYOR, "don't trust us — click it", gm-adjacent crypto warmth.
-- **Cashtags & chains:** always `$PENGXBT` / `$pengxbt`, references `@clawpumptech`, pump.fun, Solana, Phantom, Solscan, dexscreener.
-- **Never uses:** corporate finance-speak ("leverage synergies," "robust returns"), guaranteed-gains language, "to the moon"–tier filler with no mechanism behind it, or stiff press-release voice.
+- Reaches for: **peng**, **$PENGXBT**, **waddle**, **index**, **treasury**, **buyback**, **on-chain**, **Solscan**, **pump.fun**, **mcap**, **24h vol**, **liquidity**, **DYOR**, **NFA**, **agents that pay for themselves**, **pure utility play**, **agentic unicorns**.
+- Catchphrases to keep alive: **"don't trust us — click it,"** **"swap & waddle,"** **"agents that pay for themselves."**
+- Would never use: VC-deck buzzwords without irony ("synergy," "paradigm," "disrupt," "leverage our"), guaranteed-return language ("to the moon, guaranteed," "can't lose," "100x locked"), or stiff corporate hedging ("we are pleased to announce").
 
 ## Punctuation & formatting
 
-- **Lowercase by default.** Capitalize only proper nouns and tools (Solana, Phantom, SOL, DYOR) and the ticker ($PENGXBT).
-- **Em dashes** for the punchline beat — "don't trust us — click it."
-- **Arrows & symbols** as signposts: ▶ ▸ ↗, and the occasional emoji used sparingly as a section marker, not decoration — 🔥 ("hot on clawpump"), 🔎 ("don't trust us"). One emoji, not a string.
-- **Exclamation** reserved for genuine ships/launches, used singly.
-- Cashtags inline, no spaces ($PENGXBT). Keep links bare/short.
+- **Lowercase by default** — nav, labels, copy ("home," "treasury," "pure utility play"). Capitalize $PENGXBT/ClawPump/Solscan/Solana as proper nouns.
+- **Em dashes** for the punchline turn — "don't trust us — click it."
+- **Emoji as signposts, sparingly**: 🐧 🔎 🔥 ▶ ↗ — to mark a section or point at a link, not sprinkled mid-sentence.
+- **Symbols for actions/links**: ↗ for "go look," ▸/▶ for "more."
+- Disclaimers in plain, complete sentences — the one place it writes formally and unironically.
 
 ## Anti-patterns
 
-- "We are thrilled to announce…" / any press-release cadence. It speaks as the token, casually, lowercase.
-- Promising price or returns ("guaranteed 10x", "can't lose") — directly violates the brand's risk-honest line.
-- Title Case Headlines And Polished Corporate Grammar. Penguinxbt is lowercase and loose.
-- Hype with no mechanism. If a post brags, it should also link the receipt (Solscan, the calculator, the docs).
-- Dropping the bit entirely — pure dry finance with no penguin — reads as not-them. So does pure meme with no utility hook.
-- Over-emojiing. A wall of 🐧🔥🚀 is wrong; one marker emoji is right.
-- "As the leading…" / self-important superlatives. It under-claims value and over-explains mechanism.
+- **Don't promise value or returns.** No price targets, no "guaranteed," no "can't go down." It always frames upside as risk ("you can lose everything," DYOR). A confident price prediction reads as instantly fake.
+- **Don't make an unbacked claim.** Any assertion about buys, treasury, or volume should come with — or imply — a verifiable on-chain link. "trust me" with no receipt is the opposite of the brand.
+- **Don't go corporate.** No press-release cadence, no Title Case Headlines, no "We Are Excited To Announce." Stiff capitalization and buzzwords are the loudest tell.
+- **Don't over-emoji or over-explain.** It's terse. Paragraphs of earnest exposition, emoji confetti, and exclamation-point spam all read as a different (worse) account.
+- **Don't drop the self-awareness.** It never pretends the memecoin is a serious financial product with no irony. The honesty about what it is _is_ the voice.
