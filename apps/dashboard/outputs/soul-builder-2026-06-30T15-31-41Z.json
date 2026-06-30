@@ -1,0 +1,272 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "soul-builder",
+        "description": "Soul built — @penguinxbt_"
+      },
+      "children": [
+        "heading-identity",
+        "sep1",
+        "identity-text",
+        "sep2",
+        "sources-section",
+        "sep3",
+        "voice-section",
+        "sep4",
+        "files-section",
+        "sep5",
+        "action-alert"
+      ]
+    },
+    "heading-identity": {
+      "type": "Heading",
+      "props": {
+        "text": "Identity",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "identity-text": {
+      "type": "Text",
+      "props": {
+        "text": "The anonymous voice of $PENGXBT, the \"penguindex\" — an index-fund memecoin on ClawPump (Solana) that airdrops holders the top trending tokens daily."
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sources-heading",
+        "sources-list"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Sources",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "sources-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "source-x",
+        "source-site",
+        "source-search",
+        "source-limitation"
+      ]
+    },
+    "source-x": {
+      "type": "Text",
+      "props": {
+        "text": "X: 1 confirmed post; profile paywalled"
+      },
+      "children": []
+    },
+    "source-site": {
+      "type": "Text",
+      "props": {
+        "text": "penguinxbt.fun: full site copy"
+      },
+      "children": []
+    },
+    "source-search": {
+      "type": "Text",
+      "props": {
+        "text": "Web search"
+      },
+      "children": []
+    },
+    "source-limitation": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "No XAI_API_KEY available — limited sample"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "voice-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "voice-heading",
+        "voice-description",
+        "voice-traits"
+      ]
+    },
+    "voice-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Voice",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "voice-description": {
+      "type": "Text",
+      "props": {
+        "text": "Lowercase and risk-honest: wraps real mechanics (index, daily airdrops, buybacks) in a penguin bit. Brand persona, not a person — no biography claimed."
+      },
+      "children": []
+    },
+    "voice-traits": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-lowercase",
+        "badge-riskhonest",
+        "badge-penguin",
+        "badge-utility",
+        "badge-swap",
+        "badge-distrust"
+      ]
+    },
+    "badge-lowercase": {
+      "type": "Badge",
+      "props": {
+        "text": "lowercase"
+      },
+      "children": []
+    },
+    "badge-riskhonest": {
+      "type": "Badge",
+      "props": {
+        "text": "risk-honest"
+      },
+      "children": []
+    },
+    "badge-penguin": {
+      "type": "Badge",
+      "props": {
+        "text": "penguin bit"
+      },
+      "children": []
+    },
+    "badge-utility": {
+      "type": "Badge",
+      "props": {
+        "text": "\"pure utility play\""
+      },
+      "children": []
+    },
+    "badge-swap": {
+      "type": "Badge",
+      "props": {
+        "text": "\"swap & waddle\""
+      },
+      "children": []
+    },
+    "badge-distrust": {
+      "type": "Badge",
+      "props": {
+        "text": "\"don't trust us — click it\""
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "files-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "files-heading",
+        "files-list"
+      ]
+    },
+    "files-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Files Created",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "files-list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "file1",
+        "file2",
+        "file3"
+      ]
+    },
+    "file1": {
+      "type": "Text",
+      "props": {
+        "text": "soul/SOUL.md"
+      },
+      "children": []
+    },
+    "file2": {
+      "type": "Text",
+      "props": {
+        "text": "soul/STYLE.md"
+      },
+      "children": []
+    },
+    "file3": {
+      "type": "Text",
+      "props": {
+        "text": "soul/examples/good-outputs.md"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {},
+      "children": []
+    },
+    "action-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "Next steps",
+        "message": "Review and edit in the dashboard Soul tab, then Pull to refresh."
+      },
+      "children": []
+    }
+  }
+}
