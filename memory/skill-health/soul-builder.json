@@ -4,6 +4,12 @@
   "quality_score": 4,
   "assessment": "Substantive output with correct execution and transparent limitations; identified @penguinxbt_ as a crypto brand (not personal), built usable soul files with specific voice characterization, clearly flagged data constraints and next steps.",
   "flags": [],
+  "last_analyzed": "2026-06-30T15:38:15Z",
+  "quality_score": 4,
+  "assessment": "Task completed successfully with substantive artifacts; honest about data limitations (X account rate-limited); good provenance discipline and follow-up clarity.",
+  "flags": [
+    "rate_limited"
+  ],
   "avg_score": 4,
   "history": [
     {
