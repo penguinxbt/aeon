@@ -50,3 +50,7 @@ node_modules/
 # Stale artifacts
 .external-work
 .vuln-scan/
+
+# peng-scout: ephemeral monorepo clone + scratch PR body (never commit into aeon)
+.peng-scout-work/
+.pr-body.md

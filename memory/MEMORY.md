@@ -46,5 +46,7 @@ improvement + a PR + a Telegram summary per loop. Grow it into aixbt-for-Claw.
 - Always save + commit before logging; keep DMs concise (one paragraph / ≤~1200 chars).
 
 ## Next priorities
-- Operator: set `GH_GLOBAL` + Telegram secrets, then run `peng-scout` once (workflow_dispatch) to confirm the loop + test DM.
-- Then work the improvement queue in `memory/topics/peng-scout.md` (verdict backtest loop first).
+- ✅ Full loop confirmed live 2026-06-30: default Actions `GH_TOKEN` resolves the private
+  monorepo (no `GH_GLOBAL` needed); engine `--live` runs end-to-end; brief + engine PRs ship.
+- Work the improvement queue in `memory/topics/peng-scout.md` — **#1 verdict backtest loop** next
+  (queue #5 legible-gate shipped as PR #38).

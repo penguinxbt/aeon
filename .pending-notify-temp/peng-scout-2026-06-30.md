@@ -1,14 +1,15 @@
-PENG Scout — Claw pulse 2026-06-30  ·  CLAW NET: ONLINE (degraded)
+PENG Scout — Claw brief 2026-06-30  ·  CLAW NET: ONLINE
 
-mode: pulse-only. the engine didn't run — GH_GLOBAL is unset, so the private pengxbt monorepo won't clone and nothing was gated or scored. read off the live claw-worker snapshot instead.
+GH_TOKEN now reaches the monorepo — full loop is unblocked. engine ran live.
+screened 50 · gate cleared 0 into the watch lane · promoted 0 (visibility earned)
+top Scout Signal — SQUIRE 82.6/100 (integrity 100, $193K liq) — sits in treasury, NOT a new signal. receipt: solscan EN2nn…4RZA
 
-claw pulse: 60 tokens · 10 verified · 20 graduated · $6.36M mcap · $714.8K 24h vol. breadth thin — SQUIRE + CLAW carry ~88% of all volume.
-movers: SQUIRE $480K 24h (verified, +7.56% h24) · CLAW $151K (-10.68%) · MNSTR $41K but -40.88% h24 — volume spike, no integrity.
-fresh launches (GOCLAW/BULLAG/TOMI/RECLAW): all ~$2K mcap, 0 liquidity, unverified — what the gate exists to hold at Needs Review. nothing earned visibility.
-coverage watch: SQUIRE is the standout — flagged to score once the engine is live. receipt: https://dexscreener.com/solana/2epggnfpbh2xv29fndiwfzjr6agl9tgnazqhdndbcwud
+verdicts: real 0 · watching 0 · early 0 · treasury 5 · noise 20
+moves: nothing cleared the gate — it held the line. 20 quarantined: 13× holder ≥30% concentration · 5× effectively dead · 1× rugcheck danger · 1× lp unlocked.
+claw pulse: 60-token universe, ~$6.5M mcap, ~$774K 24h vol — SQUIRE+CLAW carry it ($528K + $156K). GOCLAW/MNSTR run hot on volume but ungraduated/concentrated → gate correctly held them at noise. coverage gaps: none new.
 
-growth → aixbt: blocked, not advanced — degraded runs can't gate or score.
-shipped: ledger-only (no PR).
-next: set GH_GLOBAL (PAT, contents+PR write on penguinxbt/pengxbt) → unlocks the full loop.
+growth → aixbt: the Signal Gate is now legible — the brief reports WHY the universe got filtered (reject distribution), not just names. anti-slop you can audit.
+shipped: engine PR #38 (legible gate rollup) → https://github.com/penguinxbt/pengxbt/pull/38 · today's data brief is PR #37 (already open).
+next: queue #1 — verdict backtest loop (score past verdicts vs on-chain reality).
 
-ecosystem signal, not a buy rating · source: degraded pulse (cached worker)
+ecosystem signal, not a buy rating · source: live

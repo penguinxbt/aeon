@@ -1,0 +1,460 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "PENG Scout — Claw brief 2026-06-30",
+        "description": "CLAW NET: ONLINE"
+      },
+      "children": [
+        "status_section",
+        "sep1",
+        "signal_section",
+        "sep2",
+        "verdicts_section",
+        "sep3",
+        "quarantined_section",
+        "sep4",
+        "pulse_section",
+        "sep5",
+        "shipped_section",
+        "sep6",
+        "footer"
+      ]
+    },
+    "status_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status_heading",
+        "status_text",
+        "status_stats"
+      ]
+    },
+    "status_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Status",
+        "level": "h2"
+      }
+    },
+    "status_text": {
+      "type": "Text",
+      "props": {
+        "text": "GH_TOKEN now reaches the monorepo — full loop is unblocked. Engine ran live.",
+        "variant": "body"
+      }
+    },
+    "status_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "stat_screened",
+        "stat_cleared",
+        "stat_promoted"
+      ]
+    },
+    "stat_screened": {
+      "type": "Stat",
+      "props": {
+        "label": "Screened",
+        "value": "50"
+      }
+    },
+    "stat_cleared": {
+      "type": "Stat",
+      "props": {
+        "label": "Gate cleared",
+        "value": "0"
+      }
+    },
+    "stat_promoted": {
+      "type": "Stat",
+      "props": {
+        "label": "Promoted",
+        "value": "0"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "signal_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "signal_heading",
+        "signal_stat",
+        "signal_details",
+        "signal_receipt"
+      ]
+    },
+    "signal_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Scout Signal",
+        "level": "h2"
+      }
+    },
+    "signal_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "SQUIRE",
+        "value": "82.6/100"
+      }
+    },
+    "signal_details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "signal_detail_integrity",
+        "signal_detail_liq",
+        "signal_detail_status"
+      ]
+    },
+    "signal_detail_integrity": {
+      "type": "Text",
+      "props": {
+        "text": "Integrity: 100",
+        "variant": "caption"
+      }
+    },
+    "signal_detail_liq": {
+      "type": "Text",
+      "props": {
+        "text": "Liquidity: $193K",
+        "variant": "caption"
+      }
+    },
+    "signal_detail_status": {
+      "type": "Badge",
+      "props": {
+        "text": "Treasury (not new signal)",
+        "variant": "secondary"
+      }
+    },
+    "signal_receipt": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Receipt: solscan EN2nn…4RZA",
+        "href": "https://solscan.io/tx/EN2nn4RZA",
+        "source": "Solscan"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "verdicts_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "verdicts_heading",
+        "verdicts_table"
+      ]
+    },
+    "verdicts_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Verdicts",
+        "level": "h2"
+      }
+    },
+    "verdicts_table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Status",
+          "Count"
+        ],
+        "rows": [
+          [
+            "Real",
+            "0"
+          ],
+          [
+            "Watching",
+            "0"
+          ],
+          [
+            "Early",
+            "0"
+          ],
+          [
+            "Treasury",
+            "5"
+          ],
+          [
+            "Noise",
+            "20"
+          ]
+        ]
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "quarantined_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "quarantined_heading",
+        "quarantined_text",
+        "quarantined_items"
+      ]
+    },
+    "quarantined_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Quarantined (20)",
+        "level": "h2"
+      }
+    },
+    "quarantined_text": {
+      "type": "Text",
+      "props": {
+        "text": "Nothing cleared the gate — it held the line.",
+        "variant": "body"
+      }
+    },
+    "quarantined_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "q_item1",
+        "q_item2",
+        "q_item3",
+        "q_item4"
+      ]
+    },
+    "q_item1": {
+      "type": "Text",
+      "props": {
+        "text": "13× holder ≥30% concentration",
+        "variant": "caption"
+      }
+    },
+    "q_item2": {
+      "type": "Text",
+      "props": {
+        "text": "5× effectively dead",
+        "variant": "caption"
+      }
+    },
+    "q_item3": {
+      "type": "Text",
+      "props": {
+        "text": "1× rugcheck danger",
+        "variant": "caption"
+      }
+    },
+    "q_item4": {
+      "type": "Text",
+      "props": {
+        "text": "1× lp unlocked",
+        "variant": "caption"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "pulse_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "pulse_heading",
+        "pulse_stats_main",
+        "pulse_distribution"
+      ]
+    },
+    "pulse_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Claw Pulse",
+        "level": "h2"
+      }
+    },
+    "pulse_stats_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "lg"
+      },
+      "children": [
+        "pulse_tokens",
+        "pulse_mcap",
+        "pulse_vol"
+      ]
+    },
+    "pulse_tokens": {
+      "type": "Stat",
+      "props": {
+        "label": "Token universe",
+        "value": "60"
+      }
+    },
+    "pulse_mcap": {
+      "type": "Stat",
+      "props": {
+        "label": "Market cap",
+        "value": "$6.5M"
+      }
+    },
+    "pulse_vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h volume",
+        "value": "$774K"
+      }
+    },
+    "pulse_distribution": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pulse_dist_squire",
+        "pulse_dist_goclaw",
+        "pulse_dist_gaps"
+      ]
+    },
+    "pulse_dist_squire": {
+      "type": "Text",
+      "props": {
+        "text": "SQUIRE+CLAW carry the pulse: $528K + $156K",
+        "variant": "caption"
+      }
+    },
+    "pulse_dist_goclaw": {
+      "type": "Text",
+      "props": {
+        "text": "GOCLAW/MNSTR run hot on volume but ungraduated/concentrated → gate correctly held at noise",
+        "variant": "caption"
+      }
+    },
+    "pulse_dist_gaps": {
+      "type": "Text",
+      "props": {
+        "text": "Coverage gaps: none new",
+        "variant": "caption"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "shipped_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "shipped_heading",
+        "growth_note",
+        "prs_list",
+        "next_section"
+      ]
+    },
+    "shipped_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Shipped & Next",
+        "level": "h2"
+      }
+    },
+    "growth_note": {
+      "type": "Text",
+      "props": {
+        "text": "Growth → aixbt: the Signal Gate is now legible — the brief reports WHY the universe got filtered (reject distribution), not just names. Anti-slop you can audit.",
+        "variant": "body"
+      }
+    },
+    "prs_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr_38",
+        "pr_37"
+      ]
+    },
+    "pr_38": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Engine PR #38 (legible gate rollup)",
+        "href": "https://github.com/penguinxbt/pengxbt/pull/38",
+        "source": "GitHub"
+      }
+    },
+    "pr_37": {
+      "type": "Text",
+      "props": {
+        "text": "Today's data brief is PR #37 (already open)",
+        "variant": "caption"
+      }
+    },
+    "next_section": {
+      "type": "Alert",
+      "props": {
+        "title": "Next",
+        "message": "Queue #1 — verdict backtest loop (score past verdicts vs on-chain reality)",
+        "type": "info"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Ecosystem signal, not a buy rating · Source: live",
+        "variant": "muted"
+      }
+    }
+  }
+}

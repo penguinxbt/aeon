@@ -24,9 +24,18 @@ penguinxbt/pengxbt` → "Could not resolve to a Repository"). Telegram secrets A
 Ran in degraded pulse mode off the prefetched `.claw-cache/` (live worker snapshot,
 fetched 18:02Z): 60-token universe, $6.36M mcap, $714.8K 24h vol; SQUIRE + CLAW carry
 ~88% of volume; today's fresh launches (GOCLAW/BULLAG/TOMI/RECLAW) are ~$2K mcap with
-**0 liquidity** — exactly what the gate exists to hold at Needs Review. **Blocker to
-the full loop: operator must set `GH_GLOBAL` (PAT with contents+PR write on
-`penguinxbt/pengxbt`).** Until then every run degrades to pulse-only — no brief, no PR.
+**0 liquidity** — exactly what the gate exists to hold at Needs Review.
+
+*Run 2026-06-30 (full loop — engine improvement):* **blocker cleared.** The default
+Actions `GH_TOKEN` now resolves `penguinxbt/pengxbt` — the clone succeeds (no `GH_GLOBAL`
+needed after all; `gh auth setup-git` wires push). Ran the engine **live** end-to-end
+(`scout.mjs --live`): 50 scanned, **0 cleared the gate**, 20 quarantined (13× holder ≥30%
+concentration, 5× dead, 1× RugCheck danger, 1× LP unlocked), 5 treasury, 15 ignored,
+9 needs-review. Top Scout Signal SQUIRE 82.6 (integrity 100) — treasury-held, not a new
+signal. Today's data brief was already shipped as PR #37 (by the operator's account,
+17:44Z), so per idempotency I did **not** duplicate it — instead shipped **one scoped
+engine improvement**: the Signal Gate is now **legible** (PR #38). **Stage:
+automating → trusted daily signal** (full loop now runs unattended on the default token).
 
 ## Roadmap to aixbt (Claw-native)
 
@@ -34,9 +43,9 @@ What an aixbt-class engine needs, and where Scout stands. Tick items as runs adv
 
 | Capability | aixbt bar | Scout status |
 |---|---|---|
-| **Coverage** | whole ecosystem, continuously | ⏳ live claw-worker universe via `--live` |
+| **Coverage** | whole ecosystem, continuously | ✅ live claw-worker universe via `--live` — confirmed running unattended on default `GH_TOKEN` (2026-06-30) |
 | **Freshness / latency** | near-real-time | ⏳ scheduled runs; tighten cadence as it earns trust |
-| **Signal gate (anti-slop)** | ruthless, legible | ✅ Signal Gate in place — keep sharpening reject criteria |
+| **Signal gate (anti-slop)** | ruthless, legible | ✅ Signal Gate in place + **now legible** — brief/`scout.json` report the reject distribution (PR #38, 2026-06-30) |
 | **Scoring** | multi-dim, interrogable | ✅ 5-dim Scout Signal — calibrate weights against outcomes |
 | **Dossiers** | deep per-entity context | ⏳ briefs exist; deepen builder + treasury detail |
 | **Narrative tracking** | rising/peaking/fading | ☐ not yet wired into Scout |
@@ -54,6 +63,7 @@ One row per run. `peng-scout` appends here.
 |------|--------|----------|--------------|-------------------------------------|-----------|-------------------|---------|
 | 2026-06-30 | — | — | — | — | — | *(skill wired; first autonomous run pending GH_GLOBAL + schedule)* | aeon `peng-scout` skill created |
 | 2026-06-30 | degraded-pulse (claw-cache) | 60 (10 verified / 20 graduated / 40 pre-grad) | n/a (engine unavailable — `GH_GLOBAL` unset) | n/a — no scoring this run | n/a | SQUIRE (top vol $480K, verified, +7.56% h24) — pulse-flagged as quality candidate, NOT scored | ledger-only (degraded pulse DM; no brief, no PR) |
+| 2026-06-30 | live (engine, `--live`) | 50 | 0 cleared into watch lane | 0/0/0/5/20 (real/watching/early/treasury/noise) | SQUIRE 82.6 (integrity 100, treasury-held) | SQUIRE 82.6/100 — top Scout Signal, but treasury-held, not a new signal | **engine PR #38** (legible gate rollup); data brief already shipped as PR #37 |
 
 ## Improvement queue (next scoped wins)
 
@@ -63,7 +73,7 @@ Ranked. Each loop ships one; record what shipped, then re-rank.
 2. **Narrative dimension** — wire a rising/peaking/fading narrative signal into the score (the one aixbt lever Scout is missing).
 3. **Builder-cadence enrichment** — turn the `builder` dimension from heuristic into real shipping-activity signal.
 4. **Treasury flow tracking** — beyond the `treasury` verdict, track exposure/flows for flagged mints.
-5. **Tighter gate reject reasons** — log + report *why* each mint was rejected, so the gate is legible.
+5. ~~**Tighter gate reject reasons** — log + report *why* each mint was rejected, so the gate is legible.~~ ✅ **shipped 2026-06-30 (PR #38)** — quarantine reason rollup in the brief + `scout.json`. Next refinement: per-mint full hardFail list (not just `hardFails[0]`).
 
 ## Notes
 - Default status is **Ignored / Needs Review** — nothing is promoted without operator approval.
