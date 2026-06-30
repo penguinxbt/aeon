@@ -34,6 +34,9 @@ skills:
   defi-overview: { enabled: false, schedule: "0 12 * * *" }
   liquidpad-launch: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — var: token concept (≥6 chars, or JSON {name,symbol,theme}); deploys a token on Base via LiquidPad through a prefetch/postprocess shim. Requires LIQUIDPAD_API_KEY (read by the shim, not the skill). Set LIQUIDPAD_DRY_RUN=1 to simulate.
 
+  # --- PENG Scout (the engine — building aixbt-for-Claw; one scoped improvement + PR + DM per loop) ---
+  peng-scout: { enabled: true, schedule: "0 13,1 * * *", var: "" } # twice daily (13:00 & 01:00 UTC) — pull live ClawPump data (penguinxbt-claw worker, all 7 REST routes) → run the Scout engine (apps/research/scout) → daily Claw brief + signal digest + growth ledger → PR to penguinxbt/pengxbt (base claude/peng-os-scout, branch ai/scout-*) → DM the operator. Requires GH_GLOBAL (PAT w/ contents+PR write on the monorepo) for the full loop; degrades to a live-pulse DM without it. Telegram via TELEGRAM_BOT_TOKEN+TELEGRAM_CHAT_ID (chat 6263596543). Never deploys/merges to prod (desk); visibility earned; ecosystem signal, NOT a buy rating. var: brief|engine|owner/repo.
+
   # --- Hound onchain investigation (on-demand; var = address / tx hash) ---
   rug-scan: { enabled: false, schedule: "workflow_dispatch", var: "" } # var: token address — rug-pull risk verdict
   investigation-report: { enabled: false, schedule: "workflow_dispatch", var: "" } # var: token address — composite rug+audit+deployer+holders report
@@ -201,7 +204,7 @@ skills:
 
   # Dev & repo
   builder-map: { enabled: false, schedule: "0 10 * * 2" } # Tuesday — who's building on watched repos (forks, ecosystem repos, announcements)
-  pr-tracker: { enabled: false, schedule: "30 9 * * *" } # daily — status of cross-repo PRs opened by this instance (merge/stale/closed)
+  pr-tracker: { enabled: true, schedule: "30 9 * * *" } # daily — status of cross-repo PRs opened by this instance (merge/stale/closed); tracks peng-scout's ai/scout-* PRs into penguinxbt/pengxbt
   pr-merge: { enabled: false, schedule: "45 9 * * *", var: "" } # daily 09:45 UTC — operator-facing morning digest of every open PR on the target repo (default aaronjmars/aeon), bucketed by touched-file risk tier (FAST_TRACK/SKILL_PASS/INFRA_REVIEW/SKILL_WARN_OR_BLOCK/CORE_REVIEW/UNKNOWN), each skill-PR scanned via skill-scan/scan.sh, gated re-notify on head SHA. var: dry-run [owner/repo]
   repo-revive: { enabled: false, schedule: "0 10 * * 6" } # Saturday — one targeted improvement to reactivate the top dormant watched repo
 
