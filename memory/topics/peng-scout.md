@@ -18,6 +18,16 @@ aeon skill now runs it autonomously on a schedule, ships a daily Claw brief PR, 
 DMs the operator. **Stage: bootstrapped → automating.** Next stage: *trusted daily
 signal* (consistent, verifiable, low-noise output the operator opens every day).
 
+*Run 2026-06-30 (degraded pulse):* `GH_GLOBAL`/`GH_REPO_TOKEN` unset on the runner, so
+the private monorepo can't be cloned and the engine can't run (`gh repo clone
+penguinxbt/pengxbt` → "Could not resolve to a Repository"). Telegram secrets ARE set.
+Ran in degraded pulse mode off the prefetched `.claw-cache/` (live worker snapshot,
+fetched 18:02Z): 60-token universe, $6.36M mcap, $714.8K 24h vol; SQUIRE + CLAW carry
+~88% of volume; today's fresh launches (GOCLAW/BULLAG/TOMI/RECLAW) are ~$2K mcap with
+**0 liquidity** — exactly what the gate exists to hold at Needs Review. **Blocker to
+the full loop: operator must set `GH_GLOBAL` (PAT with contents+PR write on
+`penguinxbt/pengxbt`).** Until then every run degrades to pulse-only — no brief, no PR.
+
 ## Roadmap to aixbt (Claw-native)
 
 What an aixbt-class engine needs, and where Scout stands. Tick items as runs advance them.
@@ -43,6 +53,7 @@ One row per run. `peng-scout` appends here.
 | Date | Source | Universe | Gate cleared | real/watching/early/treasury/noise | Top score | Signal of the day | Shipped |
 |------|--------|----------|--------------|-------------------------------------|-----------|-------------------|---------|
 | 2026-06-30 | — | — | — | — | — | *(skill wired; first autonomous run pending GH_GLOBAL + schedule)* | aeon `peng-scout` skill created |
+| 2026-06-30 | degraded-pulse (claw-cache) | 60 (10 verified / 20 graduated / 40 pre-grad) | n/a (engine unavailable — `GH_GLOBAL` unset) | n/a — no scoring this run | n/a | SQUIRE (top vol $480K, verified, +7.56% h24) — pulse-flagged as quality candidate, NOT scored | ledger-only (degraded pulse DM; no brief, no PR) |
 
 ## Improvement queue (next scoped wins)
 
