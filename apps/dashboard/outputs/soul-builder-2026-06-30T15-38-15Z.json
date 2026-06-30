@@ -1,0 +1,244 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "soul built"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "header_text",
+        "section_identity",
+        "sep1",
+        "section_sources",
+        "sep2",
+        "section_files",
+        "sep3",
+        "section_trait",
+        "sep4",
+        "section_cta"
+      ]
+    },
+    "header_text": {
+      "type": "Heading",
+      "props": {
+        "text": "penguinxbt (@penguinxbt_)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "section_identity": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h_identity",
+        "t_identity"
+      ]
+    },
+    "h_identity": {
+      "type": "Heading",
+      "props": {
+        "text": "Identity",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "t_identity": {
+      "type": "Text",
+      "props": {
+        "text": "On-chain penguin persona behind $PENGXBT, the \"ClawPump index fund\" on Solana — an autonomous agent running on aeon."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h_sources",
+        "sources_items",
+        "t_sources_note"
+      ]
+    },
+    "h_sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Sources",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "sources_items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "src_site",
+        "src_docs",
+        "src_github"
+      ]
+    },
+    "src_site": {
+      "type": "Link",
+      "props": {
+        "label": "penguinxbt.fun (site copy)",
+        "href": "https://penguinxbt.fun"
+      },
+      "children": []
+    },
+    "src_docs": {
+      "type": "Text",
+      "props": {
+        "text": "ClawPump ecosystem docs"
+      },
+      "children": []
+    },
+    "src_github": {
+      "type": "Text",
+      "props": {
+        "text": "GitHub"
+      },
+      "children": []
+    },
+    "t_sources_note": {
+      "type": "Text",
+      "props": {
+        "text": "X account login-walled, so the post sample is thin (flagged in-file).",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_files": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h_files",
+        "files_list"
+      ]
+    },
+    "h_files": {
+      "type": "Heading",
+      "props": {
+        "text": "Files",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "files_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "f_soul",
+        "f_style",
+        "f_examples"
+      ]
+    },
+    "f_soul": {
+      "type": "Badge",
+      "props": {
+        "text": "soul/SOUL.md"
+      },
+      "children": []
+    },
+    "f_style": {
+      "type": "Badge",
+      "props": {
+        "text": "soul/STYLE.md"
+      },
+      "children": []
+    },
+    "f_examples": {
+      "type": "Badge",
+      "props": {
+        "text": "soul/examples/good-outputs.md"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_trait": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "h_trait",
+        "t_trait"
+      ]
+    },
+    "h_trait": {
+      "type": "Heading",
+      "props": {
+        "text": "Most Distinctive Trait",
+        "level": "h4"
+      },
+      "children": []
+    },
+    "t_trait": {
+      "type": "Text",
+      "props": {
+        "text": "It markets radical transparency (\"don't trust us — click it\") while openly admitting the coin can go to zero — degen energy and deadpan honesty in the same breath."
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_cta": {
+      "type": "Alert",
+      "props": {
+        "message": "review + edit in the dashboard Soul tab, then Pull to refresh.",
+        "type": "info"
+      },
+      "children": []
+    }
+  }
+}
