@@ -12,10 +12,10 @@ set -uo pipefail
 SKILL="${1:-}"
 # VAR (arg 2) is unused — the worker takes no parameters.
 
-# Only run for the PENG Scout skill (the prefetch loop runs every script each time).
+# Only run for the PENG Scout / PENG Pulse skills (the prefetch loop runs every script each time).
 case "$SKILL" in
-  peng-scout|peng_scout|pengscout) : ;;
-  *) echo "prefetch-clawworker: not peng-scout (skill='$SKILL'), skipping"; exit 0 ;;
+  peng-scout|peng_scout|pengscout|peng-pulse|peng_pulse|pengpulse) : ;;
+  *) echo "prefetch-clawworker: not a peng skill (skill='$SKILL'), skipping"; exit 0 ;;
 esac
 
 WORKER="https://penguinxbt-claw.hockeyhulk1771.workers.dev"
