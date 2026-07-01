@@ -1,0 +1,93 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "PENG Pulse — 04:20Z · CLAW NET: ONLINE"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "healthcheck-section",
+        "context-section",
+        "disclaimer-text"
+      ]
+    },
+    "healthcheck-section": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "HEALTHCHECK",
+        "message": "Delivery confirmed. First run — baseline seeded, now tracking 60 tokens / 21 graduated. Diffing live from the next 5-min tick; silent unless something material crosses the gate."
+      }
+    },
+    "context-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "context-heading",
+        "metrics-grid",
+        "brief-text"
+      ]
+    },
+    "context-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Context",
+        "level": "h3"
+      }
+    },
+    "metrics-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "stat-mcap",
+        "stat-vol"
+      ]
+    },
+    "stat-mcap": {
+      "type": "Stat",
+      "props": {
+        "label": "Universe Market Cap",
+        "value": "$6.79M"
+      }
+    },
+    "stat-vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "$724K"
+      }
+    },
+    "brief-text": {
+      "type": "Text",
+      "props": {
+        "text": "Full scored read: peng-scout (next brief)",
+        "variant": "caption"
+      }
+    },
+    "disclaimer-text": {
+      "type": "Text",
+      "props": {
+        "text": "Ecosystem signal, not a buy rating.",
+        "variant": "muted"
+      }
+    }
+  }
+}
